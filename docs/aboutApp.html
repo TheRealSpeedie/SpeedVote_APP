@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Über SpeedVote</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #0d0c0d;
+            background: linear-gradient(135deg, #f3f1f3 0%, #e8e4e8 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px 0;
+            background: linear-gradient(135deg, #7a5a77 0%, #9b6f98 100%);
+            color: #f3f1f3;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(122, 90, 119, 0.3);
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        h2 {
+            color: #7a5a77;
+            font-size: 1.8rem;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #bcaebb;
+            font-weight: 500;
+        }
+
+        h3 {
+            color: #9b6f98;
+            font-size: 1.3rem;
+            margin: 25px 0 10px 0;
+            font-weight: 500;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        ul {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, #bcaebb 0%, #e8e4e8 100%);
+            padding: 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #7a5a77;
+        }
+
+        .feature-card h3 {
+            margin-top: 0;
+            color: #7a5a77;
+        }
+
+        .highlight {
+            background: linear-gradient(135deg, #f3f1f3 0%, #e8e4e8 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #9b6f98;
+        }
+
+        strong {
+            color: #7a5a77;
+            font-weight: 600;
+        }
+
+        .version-info {
+            background: linear-gradient(135deg, #e8e4e8 0%, #f3f1f3 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+            border: 2px solid #bcaebb;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #7a5a77;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Über SpeedVote</h1>
+            <p>Ihre Film-Abstimmungs-App</p>
+        </div>
+
+        <div class="content">
+            <h2>Willkommen bei SpeedVote</h2>
+            <p>SpeedVote ist eine innovative Film-Abstimmungs-App, die es Gruppen ermöglicht, gemeinsam Filme zu entdecken und zu bewerten. Die App wurde entwickelt, um die Filmauswahl in Gruppen zu vereinfachen und zu einem unterhaltsamen Erlebnis zu machen.</p>
+
+            <div class="highlight">
+                <p><strong>Unser Ziel:</strong> Schnelle, faire und unterhaltsame Filmabstimmungen für Gruppen jeder Größe.</p>
+            </div>
+
+            <h2>Hauptfunktionen</h2>
+
+            <div class="feature-card">
+                <h3>🎬 Raum-Management</h3>
+                <ul>
+                    <li><strong>Räume erstellen:</strong> Erstellen Sie private oder öffentliche Räume für Ihre Gruppe</li>
+                    <li><strong>Beitreten:</strong> Treten Sie bestehenden Räumen über einen Code bei</li>
+                    <li><strong>Teilnehmerverwaltung:</strong> Sehen Sie, wer im Raum ist und verwalten Sie die Teilnehmer</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <h3>🎭 Film-Abstimmung</h3>
+                <ul>
+                    <li><strong>Like/Dislike System:</strong> Bewerten Sie Filme mit einem einfachen Swipe</li>
+                    <li><strong>Genre-Filter:</strong> Wählen Sie Ihre bevorzugten Filmgenres</li>
+                    <li><strong>Film-Details:</strong> Sehen Sie Beschreibungen, Bewertungen und Poster</li>
+                    <li><strong>Streaming-Info:</strong> Erfahren Sie, wo Sie die Gewinner-Filme streamen können</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <h3>🏆 Ergebnisse & Podium</h3>
+                <ul>
+                    <li><strong>Live-Ergebnisse:</strong> Verfolgen Sie die Abstimmung in Echtzeit</li>
+                    <li><strong>Podium-Ansicht:</strong> Sehen Sie die Top-Filme auf einem attraktiven Podium</li>
+                    <li><strong>Neue Runden:</strong> Starten Sie neue Abstimmungsrunden mit den Gewinnern</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <h3>🎨 Personalisierung</h3>
+                <ul>
+                    <li><strong>Theme-Auswahl:</strong> Wählen Sie zwischen hellem und dunklem Theme</li>
+                    <li><strong>Sprachunterstützung:</strong> Verfügbar in Deutsch und Englisch</li>
+                    <li><strong>Benutzerfreundlichkeit:</strong> Intuitive Bedienung für alle Altersgruppen</li>
+                </ul>
+            </div>
+
+            <h2>Wie es funktioniert</h2>
+            <ol>
+                <li><strong>Raum erstellen oder beitreten:</strong> Erstellen Sie einen neuen Raum oder treten Sie einem bestehenden bei</li>
+                <li><strong>Genre auswählen:</strong> Wählen Sie die Filmgenres, die Sie interessieren</li>
+                <li><strong>Filme bewerten:</strong> Swipen Sie nach rechts für Like, nach links für Dislike</li>
+                <li><strong>Ergebnisse verfolgen:</strong> Sehen Sie live, welche Filme am besten abschneiden</li>
+                <li><strong>Gewinner feiern:</strong> Entdecken Sie die beliebtesten Filme Ihrer Gruppe</li>
+            </ol>
+
+            <h2>Technische Details</h2>
+            <div class="version-info">
+                <h3>App-Informationen</h3>
+                <p><strong>Version:</strong> 1.0.0</p>
+                <p><strong>Plattform:</strong> Flutter (iOS, Android, Web)</p>
+                <p><strong>Backend:</strong> Django REST API</p>
+                <p><strong>Film-Daten:</strong> The Movie Database (TMDB)</p>
+                <p><strong>Streaming-Daten:</strong> JustWatch API</p>
+            </div>
+
+            <h2>Datenschutz & Sicherheit</h2>
+            <p>Ihre Privatsphäre ist uns wichtig. SpeedVote verwendet:</p>
+            <ul>
+                <li><strong>Google Sign-In:</strong> Für sichere und einfache Anmeldung</li>
+                <li><strong>Lokale Datenspeicherung:</strong> Persönliche Einstellungen bleiben auf Ihrem Gerät</li>
+                <li><strong>Minimale Datenerhebung:</strong> Nur notwendige Daten werden verarbeitet</li>
+                <li><strong>Verschlüsselte Kommunikation:</strong> Alle Datenübertragungen sind verschlüsselt</li>
+            </ul>
+
+            <h2>Support & Kontakt</h2>
+            <p>Bei Fragen, Problemen oder Anregungen erreichen Sie uns unter:</p>
+            <div class="highlight">
+                <p><strong>E-Mail:</strong> <a href="mailto:aileen.koesters03@gmail.com">aileen.koesters03@gmail.com</a></p>
+                <p><strong>Entwicklerin:</strong> Aileen Kösters</p>
+            </div>
+
+            <div class="footer">
+                <p><em>SpeedVote - Gemeinsam die besten Filme entdecken</em></p>
+                <p><em>Entwickelt mit ❤️ für Filmfans</em></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
