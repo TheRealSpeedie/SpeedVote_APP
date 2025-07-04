@@ -1,217 +1,307 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Datenschutzerklärung – SpeedVote</title>
-  <style>
-    :root {
-      --bg-color: #1a1124;
-      --text-color: #f3e9ff;
-      --accent-color: #a66bff;
-      --section-bg: #2a1c3a;
-      --link-color: #c58dff;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutzerklärung - SpeedVote</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    body {
-      margin: 0;
-      font-family: "Segoe UI", sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      line-height: 1.6;
-      padding: 2rem;
-    }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #0d0c0d;
+            background: linear-gradient(135deg, #f3f1f3 0%, #e8e4e8 100%);
+            min-height: 100vh;
+        }
 
-    h1, h2, h3 {
-      color: var(--accent-color);
-    }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-    h1 {
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 2rem;
-    }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px 0;
+            background: linear-gradient(135deg, #7a5a77 0%, #9b6f98 100%);
+            color: #f3f1f3;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(122, 90, 119, 0.3);
+        }
 
-    ul.index {
-      list-style-type: none;
-      padding: 0;
-      margin-bottom: 2rem;
-    }
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
 
-    ul.index li {
-      margin: 0.5rem 0;
-    }
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
 
-    ul.index a {
-      color: var(--link-color);
-      text-decoration: none;
-    }
+        .content {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
 
-    ul.index a:hover {
-      text-decoration: underline;
-    }
+        h2 {
+            color: #7a5a77;
+            font-size: 1.8rem;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #bcaebb;
+            font-weight: 500;
+        }
 
-    a {
-      color: var(--link-color);
-    }
+        h3 {
+            color: #9b6f98;
+            font-size: 1.3rem;
+            margin: 25px 0 10px 0;
+            font-weight: 500;
+        }
 
-    section {
-      background: var(--section-bg);
-      padding: 1.5rem;
-      margin-bottom: 2rem;
-      border-radius: 8px;
-    }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
 
-    ul {
-      padding-left: 1.2rem;
-    }
+        ul {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
 
-    li {
-      margin-bottom: 0.5rem;
-    }
+        li {
+            margin-bottom: 8px;
+        }
 
-    p em {
-      color: #d6c5f7;
-      font-style: italic;
-    }
+        .index {
+            background: linear-gradient(135deg, #bcaebb 0%, #e8e4e8 100%);
+            padding: 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #7a5a77;
+        }
 
-    @media (max-width: 600px) {
-      body {
-        padding: 1rem;
-      }
-    }
-  </style>
+        .index ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .index li {
+            margin-bottom: 10px;
+        }
+
+        .index a {
+            color: #7a5a77;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .index a:hover {
+            color: #9b6f98;
+            text-decoration: underline;
+        }
+
+        strong {
+            color: #7a5a77;
+            font-weight: 600;
+        }
+
+        a {
+            color: #9b6f98;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #7a5a77;
+            text-decoration: underline;
+        }
+
+        .contact-info {
+            background: linear-gradient(135deg, #f3f1f3 0%, #e8e4e8 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #9b6f98;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #7a5a77;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <div class="header">
+            <h1>Datenschutzerklärung</h1>
+        </div>
 
-  <h1>Datenschutzerklärung für SpeedVote</h1>
+        <div class="content">
+            <h2 id="preamble">Präambel</h2>
+            <p>Diese Datenschutzerklärung informiert Sie darüber, welche personenbezogenen Daten wir im Rahmen unserer "SpeedVote" App verarbeiten, zu welchen Zwecken und in welchem Umfang.</p>
+            <p><strong>Stand:</strong> 3. Juli 2025</p>
 
-  <section>
-    <h2 id="preamble">Präambel</h2>
-    <p>Diese Datenschutzerklärung informiert Sie darüber, welche personenbezogenen Daten wir im Rahmen unserer "SpeedVote" App verarbeiten, zu welchen Zwecken und in welchem Umfang.</p>
-    <p><strong>Stand:</strong> 3. Juli 2025</p>
-  </section>
+            <h2>Inhaltsübersicht</h2>
+            <div class="index">
+                <ul>
+                    <li><a href="#controller">Verantwortlicher</a></li>
+                    <li><a href="#app-description">Beschreibung der App</a></li>
+                    <li><a href="#data-collection">Datenerhebung und -verarbeitung</a></li>
+                    <li><a href="#google-signin">Google Sign-In</a></li>
+                    <li><a href="#local-storage">Lokale Datenspeicherung</a></li>
+                    <li><a href="#api-services">Externe Dienste</a></li>
+                    <li><a href="#data-retention">Datenaufbewahrung</a></li>
+                    <li><a href="#user-rights">Ihre Rechte</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </div>
 
-  <section>
-    <h2>Inhaltsübersicht</h2>
-    <ul class="index">
-      <li><a href="#controller">Verantwortlicher</a></li>
-      <li><a href="#app-description">Beschreibung der App</a></li>
-      <li><a href="#data-collection">Datenerhebung und -verarbeitung</a></li>
-      <li><a href="#google-signin">Google Sign-In</a></li>
-      <li><a href="#local-storage">Lokale Datenspeicherung</a></li>
-      <li><a href="#api-services">Externe Dienste</a></li>
-      <li><a href="#data-retention">Datenaufbewahrung</a></li>
-      <li><a href="#user-rights">Ihre Rechte</a></li>
-      <li><a href="#contact">Kontakt</a></li>
-    </ul>
-  </section>
+            <h2 id="controller">Verantwortlicher</h2>
+            <div class="contact-info">
+                <p><strong>Aileen Kösters</strong><br>
+                Erlenweg 4<br>
+                9403 Goldach</p>
+                <p>E-Mail: <a href="mailto:aileen.koesters03@gmail.com">aileen.koesters03@gmail.com</a></p>
+            </div>
 
-  <section id="controller">
-    <h2>Verantwortlicher</h2>
-    <p>Aileen Kösters<br>Erlenweg 4<br>9403 Goldach</p>
-    <p>E-Mail: <a href="mailto:aileen.koesters03@gmail.com">aileen.koesters03@gmail.com</a></p>
-  </section>
+            <h2 id="app-description">Beschreibung der App</h2>
+            <p>SpeedVote ist eine Film-Abstimmungs-App, die es Nutzern ermöglicht:</p>
+            <ul>
+                <li>Räume zu erstellen und beizutreten</li>
+                <li>Filme zu bewerten (Like/Dislike)</li>
+                <li>Abstimmungsergebnisse zu sehen</li>
+                <li>Neue Voting-Runden zu starten</li>
+            </ul>
 
-  <section id="app-description">
-    <h2>Beschreibung der App</h2>
-    <p>SpeedVote ist eine Film-Abstimmungs-App, die es Nutzern ermöglicht:</p>
-    <ul>
-      <li>Räume zu erstellen und beizutreten</li>
-      <li>Filme zu bewerten (Like/Dislike)</li>
-      <li>Abstimmungsergebnisse zu sehen</li>
-      <li>Neue Voting-Runden zu starten</li>
-    </ul>
-  </section>
+            <h2 id="data-collection">Datenerhebung und -verarbeitung</h2>
 
-  <section id="data-collection">
-    <h2>Datenerhebung und -verarbeitung</h2>
-    <h3>Personenbezogene Daten</h3>
-    <ul>
-      <li><strong>E-Mail-Adresse:</strong> Über Google Sign-In</li>
-      <li><strong>Google-Kontoinformationen:</strong> Name und Profilbild (falls verfügbar)</li>
-      <li><strong>Session-Daten:</strong> Anmelde-Status und Session-Cookies</li>
-    </ul>
-    <h3>Nicht-personenbezogene Daten</h3>
-    <ul>
-      <li><strong>Raum-Daten:</strong> Raum-ID, Teilnehmeranzahl, Genre-Präferenzen</li>
-      <li><strong>Film-Daten:</strong> Titel, Beschreibungen, Bewertungen, Bilder</li>
-      <li><strong>Abstimmungs-Daten:</strong> Like/Dislike-Votes</li>
-      <li><strong>App-Nutzung:</strong> Interaktionen mit der Oberfläche</li>
-    </ul>
-  </section>
+            <h3>Personenbezogene Daten</h3>
+            <p>Wir verarbeiten folgende personenbezogene Daten:</p>
+            <ul>
+                <li><strong>E-Mail-Adresse:</strong> Über Google Sign-In</li>
+                <li><strong>Google-Kontoinformationen:</strong> Name und Profilbild (falls verfügbar)</li>
+                <li><strong>Session-Daten:</strong> Anmelde-Status und Session-Cookies</li>
+            </ul>
 
-  <section id="google-signin">
-    <h2>Google Sign-In</h2>
-    <ul>
-      <li><strong>Zweck:</strong> Sichere Anmeldung und Identifikation</li>
-      <li><strong>Daten:</strong> E-Mail und Kontoinformationen</li>
-      <li><strong>Berechtigung:</strong> Nur E-Mail-Zugriff</li>
-      <li><strong>Speicherung:</strong> Lokal auf dem Gerät</li>
-    </ul>
-    <p>Siehe auch die <a href="https://policies.google.com/privacy" target="_blank">Google Datenschutzerklärung</a>.</p>
-  </section>
+            <h3>Nicht-personenbezogene Daten</h3>
+            <p>Folgende Daten werden ohne Personenbezug verarbeitet:</p>
+            <ul>
+                <li><strong>Raum-Daten:</strong> Raum-ID, Teilnehmeranzahl, Genre-Präferenzen</li>
+                <li><strong>Film-Daten:</strong> Film-Titel, Beschreibungen, Bewertungen, Bilder</li>
+                <li><strong>Abstimmungs-Daten:</strong> Like/Dislike-Votes pro Film</li>
+                <li><strong>App-Nutzung:</strong> Interaktionen mit der App-Oberfläche</li>
+            </ul>
 
-  <section id="local-storage">
-    <h2>Lokale Datenspeicherung</h2>
-    <ul>
-      <li><strong>Anmelde-Status</strong></li>
-      <li><strong>E-Mail-Adresse</strong></li>
-      <li><strong>Session-Cookies</strong></li>
-      <li><strong>App-Einstellungen</strong></li>
-    </ul>
-    <p>Diese Daten bleiben lokal und werden nicht an Dritte weitergegeben.</p>
-  </section>
+            <h2 id="google-signin">Google Sign-In</h2>
+            <p>Die App verwendet Google Sign-In für die Authentifizierung:</p>
+            <ul>
+                <li><strong>Zweck:</strong> Sichere Anmeldung und Identifikation der Nutzer</li>
+                <li><strong>Daten:</strong> E-Mail-Adresse und grundlegende Google-Kontoinformationen</li>
+                <li><strong>Berechtigung:</strong> Nur E-Mail-Zugriff wird angefordert</li>
+                <li><strong>Speicherung:</strong> Anmelde-Status wird lokal gespeichert</li>
+            </ul>
+            <p>Die Nutzung von Google Sign-In unterliegt der <a href="https://policies.google.com/privacy" target="_blank">Google Datenschutzerklärung</a>.</p>
 
-  <section id="api-services">
-    <h2>Externe Dienste</h2>
-    <h3>Backend-Server</h3>
-    <ul>
-      <li>Raum-Verwaltung</li>
-      <li>Film-Daten von TMDB</li>
-      <li>Abstimmungs-Management</li>
-      <li>Session-Verwaltung</li>
-    </ul>
-    <h3>The Movie Database (TMDB)</h3>
-    <ul>
-      <li><strong>Daten:</strong> Titel, Poster, Genres, Bewertungen</li>
-      <li><strong>Zweck:</strong> Inhalt für Abstimmungen</li>
-      <li><strong>Datenschutz:</strong> <a href="https://www.themoviedb.org/privacy-policy" target="_blank">TMDB Datenschutzerklärung</a></li>
-    </ul>
-    <h3>Streaming-Anbieter</h3>
-    <ul>
-      <li><strong>Daten:</strong> Verfügbarkeit</li>
-      <li><strong>Quelle:</strong> JustWatch API</li>
-      <li><strong>Zweck:</strong> Streaming-Information</li>
-    </ul>
-  </section>
+            <h2 id="local-storage">Lokale Datenspeicherung</h2>
+            <p>Die App speichert folgende Daten lokal auf Ihrem Gerät:</p>
+            <ul>
+                <li><strong>Anmelde-Status:</strong> Ob Sie eingeloggt sind</li>
+                <li><strong>E-Mail-Adresse:</strong> Für automatische Anmeldung</li>
+                <li><strong>Session-Cookies:</strong> Für die Backend-Kommunikation</li>
+                <li><strong>App-Einstellungen:</strong> Theme-Präferenzen und andere UI-Einstellungen</li>
+            </ul>
+            <p>Diese Daten werden nur auf Ihrem Gerät gespeichert und nicht an Dritte weitergegeben.</p>
 
-  <section id="data-retention">
-    <h2>Datenaufbewahrung</h2>
-    <ul>
-      <li><strong>Lokale Daten:</strong> Bis zur Deinstallation/Löschung</li>
-      <li><strong>Backend-Daten:</strong> Bei Verlassen des letzten Nutzers gelöscht</li>
-      <li><strong>Session-Daten:</strong> Nach Abmeldung entfernt</li>
-      <li><strong>Film-Daten:</strong> Bei Raum-Löschung entfernt</li>
-    </ul>
-  </section>
+            <h2 id="api-services">Externe Dienste</h2>
 
-  <section id="user-rights">
-    <h2>Ihre Rechte</h2>
-    <ul>
-      <li><strong>Auskunft</strong></li>
-      <li><strong>Löschung</strong></li>
-      <li><strong>Widerspruch</strong></li>
-      <li><strong>Datenübertragbarkeit</strong></li>
-    </ul>
-    <p>Kontaktieren Sie uns unter der oben genannten E-Mail-Adresse.</p>
-  </section>
+            <h3>Backend-Server</h3>
+            <p>Die App kommuniziert mit einem Backend-Server für:</p>
+            <ul>
+                <li>Raum-Verwaltung (Erstellen, Beitreten, Löschen)</li>
+                <li>Film-Daten (von The Movie Database API)</li>
+                <li>Abstimmungs-Verwaltung</li>
+                <li>Session-Management</li>
+            </ul>
 
-  <section id="contact">
-    <h2>Kontakt</h2>
-    <p>E-Mail: <a href="mailto:aileen.koesters03@gmail.com">aileen.koesters03@gmail.com</a></p>
-    <p><em>Diese Datenschutzerklärung wurde speziell für die SpeedVote App erstellt und spiegelt die tatsächliche Datenverarbeitung wider.</em></p>
-  </section>
+            <h3>The Movie Database (TMDB)</h3>
+            <p>Film-Daten werden von der TMDB API bezogen:</p>
+            <ul>
+                <li><strong>Daten:</strong> Film-Titel, Beschreibungen, Poster, Genres, Bewertungen</li>
+                <li><strong>Zweck:</strong> Bereitstellung von Film-Inhalten für Abstimmungen</li>
+                <li><strong>Datenschutz:</strong> Siehe <a href="https://www.themoviedb.org/privacy-policy" target="_blank">TMDB Datenschutzerklärung</a></li>
+            </ul>
 
+            <h3>Streaming-Anbieter</h3>
+            <p>Für Gewinner-Filme werden Streaming-Anbieter angezeigt:</p>
+            <ul>
+                <li><strong>Daten:</strong> Verfügbarkeit auf verschiedenen Plattformen</li>
+                <li><strong>Quelle:</strong> JustWatch API</li>
+                <li><strong>Zweck:</strong> Information über Streaming-Verfügbarkeit</li>
+            </ul>
+
+            <h2 id="data-retention">Datenaufbewahrung</h2>
+            <p>Die Aufbewahrung erfolgt wie folgt:</p>
+            <ul>
+                <li><strong>Lokale Daten:</strong> Bis zur App-Deinstallation oder manueller Löschung</li>
+                <li><strong>Backend-Daten:</strong> Räume und zugehörige Daten werden gelöscht, wenn der letzte Teilnehmer den Raum verlässt</li>
+                <li><strong>Session-Daten:</strong> Werden bei Abmeldung gelöscht</li>
+                <li><strong>Film-Daten:</strong> Werden bei Raum-Löschung entfernt</li>
+            </ul>
+
+            <h2 id="user-rights">Ihre Rechte</h2>
+            <p>Sie haben folgende Rechte:</p>
+            <ul>
+                <li><strong>Auskunft:</strong> Über gespeicherte personenbezogene Daten</li>
+                <li><strong>Löschung:</strong> Ihrer personenbezogenen Daten</li>
+                <li><strong>Widerspruch:</strong> Gegen die Verarbeitung</li>
+                <li><strong>Datenübertragbarkeit:</strong> Ihrer Daten in einem strukturierten Format</li>
+            </ul>
+            <p>Zur Ausübung dieser Rechte kontaktieren Sie uns unter der oben genannten E-Mail-Adresse.</p>
+
+            <h2 id="contact">Kontakt</h2>
+            <p>Bei Fragen zum Datenschutz erreichen Sie uns unter:</p>
+            <div class="contact-info">
+                <p>E-Mail: <a href="mailto:aileen.koesters03@gmail.com">aileen.koesters03@gmail.com</a></p>
+            </div>
+
+            <div class="footer">
+                <p><em>Diese Datenschutzerklärung wurde speziell für die SpeedVote App erstellt und spiegelt die tatsächliche Datenverarbeitung wider.</em></p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
