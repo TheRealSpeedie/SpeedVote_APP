@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daten löschen - SpeedVote</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #0d0c0d;
+            background: linear-gradient(135deg, #f3f1f3 0%, #e8e4e8 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px 0;
+            background: linear-gradient(135deg, #7a5a77 0%, #9b6f98 100%);
+            color: #f3f1f3;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(122, 90, 119, 0.3);
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        h2 {
+            color: #7a5a77;
+            font-size: 1.8rem;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #bcaebb;
+            font-weight: 500;
+        }
+
+        h3 {
+            color: #9b6f98;
+            font-size: 1.3rem;
+            margin: 25px 0 10px 0;
+            font-weight: 500;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        ul {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, #bcaebb 0%, #e8e4e8 100%);
+            padding: 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #7a5a77;
+        }
+
+        .feature-card h3 {
+            margin-top: 0;
+            color: #7a5a77;
+        }
+
+        .highlight {
+            background: linear-gradient(135deg, #f3f1f3 0%, #e8e4e8 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #9b6f98;
+        }
+
+        .warning {
+            background: linear-gradient(135deg, #ffe6e6 0%, #ffcccc 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #cc3333;
+        }
+
+        .warning h3 {
+            color: #cc3333;
+        }
+
+        .success {
+            background: linear-gradient(135deg, #e6ffe6 0%, #ccffcc 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #33cc33;
+        }
+
+        .success h3 {
+            color: #33cc33;
+        }
+
+        strong {
+            color: #7a5a77;
+            font-weight: 600;
+        }
+
+        .button {
+            display: inline-block;
+            background: linear-gradient(135deg, #7a5a77 0%, #9b6f98 100%);
+            color: #f3f1f3;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: 10px 10px 10px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(122, 90, 119, 0.3);
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(122, 90, 119, 0.4);
+        }
+
+        .button.secondary {
+            background: linear-gradient(135deg, #bcaebb 0%, #9b6f98 100%);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #7a5a77;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Daten löschen</h1>
+        </div>
+
+        <div class="content">
+            <h2>Ihre Daten bei SpeedVote</h2>
+            <p>SpeedVote respektiert Ihre Privatsphäre und gibt Ihnen volle Kontrolle über Ihre Daten. Hier erfahren Sie, welche Daten gespeichert werden und wie Sie diese löschen können.</p>
+
+            <div class="highlight">
+                <p><strong>Wichtig:</strong> SpeedVote verwendet Google Sign-In für die Authentifizierung. Ihre persönlichen Daten werden hauptsächlich von Google verwaltet.</p>
+            </div>
+
+            <h2>Welche Daten werden gespeichert?</h2>
+
+            <div class="feature-card">
+                <h3>📱 Lokale App-Daten</h3>
+                <ul>
+                    <li><strong>Login-Status:</strong> Ob Sie angemeldet sind</li>
+                    <li><strong>E-Mail-Adresse:</strong> Von Ihrem Google-Konto</li>
+                    <li><strong>App-Einstellungen:</strong> Theme, Sprache, etc.</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <h3>🌐 Server-Daten</h3>
+                <ul>
+                    <li><strong>Raum-Informationen:</strong> Erstellte Räume und Teilnahmen</li>
+                    <li><strong>Film-Bewertungen:</strong> Ihre Like/Dislike-Entscheidungen</li>
+                    <li><strong>Abstimmungsergebnisse:</strong> Gemeinsame Ergebnisse der Gruppe</li>
+                    <li><strong>Theme-Einstellungen:</strong> Erstellte Custom Themes</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <h3>🔐 Google-Konto-Daten</h3>
+                <ul>
+                    <li><strong>E-Mail-Adresse:</strong> Für die Anmeldung</li>
+                    <li><strong>Profil-Informationen:</strong> Name und Profilbild (optional)</li>
+                    <li><strong>Berechtigungen:</strong> App-Zugriff auf Google-Konto</li>
+                </ul>
+            </div>
+
+            <h2>Wie Sie Ihre Daten löschen können</h2>
+
+            <div class="success">
+                <h3>✅ Einfache Lösung: Google-Konto-Berechtigung widerrufen</h3>
+                <p>Die einfachste Methode, um Ihre Daten zu löschen, ist die Widerrufung der App-Berechtigung in Ihrem Google-Konto:</p>
+                <a href="https://myaccount.google.com/permissions" class="button" target="_blank">Google-Konto-Berechtigungen verwalten</a>
+                <p><em>Nach dem Widerruf der Berechtigung können Sie sich nicht mehr in der App anmelden und alle lokalen Daten werden gelöscht.</em></p>
+            </div>
+
+            <div class="feature-card">
+                <h3>🗑️ App-Daten löschen</h3>
+                <p><strong>Option 1: In-App-Löschung (Empfohlen)</strong></p>
+                <ul>
+                    <li>Öffnen Sie die SpeedVote App</li>
+                    <li>Gehen Sie zu "Einstellungen"</li>
+                    <li>Tippen Sie auf "Datenverwaltung"</li>
+                    <li>Wählen Sie "Alle Daten löschen"</li>
+                    <li>Bestätigen Sie die Löschung im Dialog</li>
+                </ul>
+                <p><strong>Option 2: Geräte-Einstellungen</strong></p>
+                <ul>
+                    <li>Öffnen Sie die App-Einstellungen auf Ihrem Gerät</li>
+                    <li>Wählen Sie "SpeedVote"</li>
+                    <li>Tippen Sie auf "Speicherplatz" oder "Daten löschen"</li>
+                    <li>Bestätigen Sie die Löschung</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <h3>📧 Server-Daten löschen</h3>
+                <p>Um Ihre Server-Daten vollständig zu löschen, kontaktieren Sie uns:</p>
+                <a href="mailto:speedvoteapp@gmail.com?subject=Daten löschen - SpeedVote" class="button secondary">E-Mail senden</a>
+                <p><em>Geben Sie in der E-Mail Ihre E-Mail-Adresse an, damit wir Ihre Daten identifizieren können.</em></p>
+            </div>
+
+            <div class="warning">
+                <h3>⚠️ Wichtige Hinweise</h3>
+                <ul>
+                    <li><strong>Gruppen-Daten:</strong> Wenn Sie an Gruppen-Abstimmungen teilgenommen haben, können diese Daten für andere Gruppenmitglieder sichtbar bleiben</li>
+                    <li><strong>Anonyme Daten:</strong> Einige statistische Daten können anonymisiert für App-Verbesserungen verwendet werden</li>
+                    <li><strong>Backup-Daten:</strong> Gelöschte Daten können in Backups für kurze Zeit verfügbar sein</li>
+                </ul>
+            </div>
+
+            <h2>Was passiert nach der Löschung?</h2>
+            <ol>
+                <li><strong>Sofort:</strong> Lokale App-Daten werden gelöscht</li>
+                <li><strong>Innerhalb 24 Stunden:</strong> Server-Daten werden entfernt</li>
+                <li><strong>Innerhalb 30 Tage:</strong> Alle Backups werden bereinigt</li>
+                <li><strong>Dauerhaft:</strong> Sie können sich nicht mehr anmelden</li>
+            </ol>
+
+            <h2>Kontakt & Support</h2>
+            <p>Bei Fragen zur Datenlöschung oder anderen Datenschutz-Anliegen:</p>
+            <div class="highlight">
+                <p><strong>E-Mail:</strong> <a href="mailto:speedvoteapp@gmail.com">speedvoteapp@gmail.com</a></p>
+                <p><strong>Betreff:</strong> "Daten löschen - SpeedVote"</p>
+                <p><strong>Antwortzeit:</strong> Innerhalb von 48 Stunden</p>
+            </div>
+
+            <div class="footer">
+                <p><em>Ihre Privatsphäre ist uns wichtig</em></p>
+                <p><em>SpeedVote - Transparent und benutzerfreundlich</em></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
