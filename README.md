@@ -2,6 +2,8 @@
 
 A **movie voting app inspired by Tinder** – make group movie decisions **fun and easy!**  
 
+<img width="416" height="222" alt="speedVote" src="https://github.com/user-attachments/assets/5ffa43bf-c4d9-4211-93da-2ec31e6b6498" />
+
 ## 🎥 How It Works  
 1. **Create a Room** – Generate a unique room code.  
 2. **Invite Friends** – Share the code so they can join.  
